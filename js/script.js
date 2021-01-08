@@ -1,3 +1,5 @@
+
+
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 
@@ -54,7 +56,7 @@ var repeat = function (activeClass) {
         return;
       }
       repeater();
-    }, 10000);
+    }, 5000);
   };
   repeater();
 };
@@ -64,7 +66,7 @@ repeat();
 
 function dropDown() {
   document.getElementById("myDropdown").classList.toggle("show");
-}
+
 
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (event) {
@@ -79,7 +81,7 @@ window.onclick = function (event) {
     }
   }
 };
-
+}
 function loginForm() {
   document.getElementById('id01').style.display='Block'
   var modal = document.getElementById("id01");

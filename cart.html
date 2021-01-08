@@ -35,7 +35,7 @@
           >
 
           <div id="id01" class="modal">
-            <form id="signIn-form" class="modal-content animate">
+            <form class="modal-content animate" method="post">
               <div class="imgcontainer">
                 <span
                   onclick="document.getElementById('id01').style.display='none'"
@@ -53,7 +53,7 @@
                 <input
                   type="text"
                   placeholder="Nhập tài khoản"
-                  
+                  value="ádăd"
                   name="uname"
                   id="userName"
                   required
@@ -68,7 +68,7 @@
                   required
                 />
 
-                <button type="submit">Đăng nhập</button>
+                <button type="submit" onclick="login()">Đăng nhập</button>
                 <button
                   style="background-color: red"
                   type="button"
@@ -153,7 +153,8 @@
       </div>
     </div>
     <nav class="navbar">
-      <div class="brand-title">Bão Botique</div>
+      <div class="brand-title"><a style="    text-decoration: none;
+        color: white;" href="index.html">Bão Botique</a></div>
       <a href="#" class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -161,11 +162,11 @@
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="mens.html">Nam</a></li>
-          <li><a href="womens.html">Nữ</a></li>
-          <li><a href="kids.html">Trẻ em</a></li>
-          <li><a style="color: red" href="news.html">Mới</a></li>
-          <li><a style="color: red" href="sales.html">Giảm giá</a></li>
+            <li><a href="mens.html">Nam</a></li>
+            <li><a href="womens.html">Nữ</a></li>
+            <li><a href="kids.html">Trẻ em</a></li>
+          <li><a style="color: red" href="#">Mới</a></li>
+          <li><a style="color: red" href="#">Giảm giá</a></li>
         </ul>
       </div>
       <form class="form-inline">
@@ -177,206 +178,86 @@
           style="height: 30px"
         />
         <a href="#"><i style="color: white" class="fa fa-search"></i></a>
-        <a href="cart.html"><i style="color: white" class="fa fa-shopping-cart"></i></a>
+        <a href="#"><i style="color: white" class="fa fa-shopping-cart"></i></a>
       </form>
     </nav>
+<!-- -----------------cart item details------------------- -->
+<div class="small-container cart-page">
+    <table style="width: 100%;
+    border-collapse: collapse; "> 
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/buy-1.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/buy-2.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small>Price: $75.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$75.00</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="img/buy-3.jpg">
+                    <div>
+                        <p>Red Printed Tshirt</p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>$50.00</td>
+        </tr>
+    </table>
 
-    <!-- Slideshow -->
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Tổng</td>
+                <td>175.000$</td>
+            </tr>
+            <tr>
+                <td>Thuế</td>
+                <td>25.00$</td>
+            </tr>
+            <tr>
+                <td>Thanh toán</td>
+                <td>200.000$</td>
+            </tr>
+        </table>
 
-    <div class="img-slider">
-      <div class="slide active">
-        <img src="./img/1.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./img/2.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./img/3.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./img/4.jpg" alt="" />
-      </div>
-      <div class="slide">
-        <img src="./img/5.jpg" alt="" />
-      </div>
-      <div class="navigation">
-        <div class="btn active"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-        <div class="btn"></div>
-      </div>
-    </div>
-    <!-- ****************** -->
-    <div style="margin: 50px 0" class="categories">
-      <div class="small-container">
-        <div class="row" style="justify-content: center">
-          <div class="col-3">
-            <img style="width: 100%" src="img/category-1.jpg" />
-          </div>
-          <div class="col-3">
-            <img style="width: 100%" src="img/category-2.jpg" />
-          </div>
-          <div class="col-3">
-            <img style="width: 100%" src="img/category-3.jpg" />
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- ****************** -->
-    <div class="container-sm">
-      <h2 class="title">Featured Products</h2>
-      <div class="row">
-        <div class="col-4">
-          <a href="products_detal.html"><img src="img/product-1.jpg" /></a>
-          <a href="products_detal.html"><h4>Red Printed T-Shirt</h4></a>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-2.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-3.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-4.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
-      <h2 class="title">Latest Products</h2>
-      <div class="row">
-        <div class="col-4">
-          <img src="img/product-5.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-6.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-7.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-8.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-9.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-10.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-11.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>f
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="img/product-12.jpg" />
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
-    </div>
+
+</div>
+   
     <!-- ------------ testimonial -------------- -->
     <div class="testimonial">
       <div class="small-container">
@@ -471,7 +352,7 @@
   </div>
     <!-- ****************** -->
     <script src="js/script.js"></script>
-
-    <script type="module" src="./js/index.js"></script>
+    
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
